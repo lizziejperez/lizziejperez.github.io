@@ -104,3 +104,5 @@ table.ah-table {
     text-align: left;
 }
 td.cntr {text-align: center;}
+
+hr.half {width: 50%; margin: 20px auto;}
