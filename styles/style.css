@@ -24,10 +24,7 @@ menu {
     border-bottom: 1px solid #999;
     margin: 0;
 }
-menu a {
-    line-height: 30px;
-    margin: 0 1%;
-}
+menu a {line-height: 30px;margin: 0 1%;}
 menu a.currPG {color:#f37e7e;}
 
 .content {
@@ -50,15 +47,13 @@ footer a {
     color: #999;
 }
 
-p { color: #555; }
+p {color: #555;}
+ul {color: #555;}
 
-img { margin: 15px; }
+img {margin: 15px;}
 img.cert {width: 50%;}
 
-a {
-    text-decoration: none;
-    color: #555;
-}
+a {text-decoration: none;color: #555;}
 a:hover {color: #f37e7e;}
 a.btn {
     border-radius: 16px;
