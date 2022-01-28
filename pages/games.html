@@ -2,32 +2,35 @@
 <html>
     <head>
         <title>Lizzie Perez</title>
-        <link rel="shortcut icon" href="images/figureOfLizzie.jpeg" type="image/x-icon">
-        <link rel="stylesheet" href="../../styles/style.css">
+        <link rel="shortcut icon" href="../images/figureOfLizzie.jpeg" type="image/x-icon">
+        <link rel="stylesheet" href="../styles/style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
     </head>
-    <style>
-        .grid-1x2 {
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: 1fr 1fr;
-            width: 90%;
-            margin: auto;
-        }
-    </style>
     <body>
         <header>
-            <h1><a href="../../index.html" class="h-link">Lizzie J. Perez</a></h1>
+            <h1><a href="index.html" class="h-link">Lizzie J. Perez</a></h1>
         </header>
         <menu>
-            <a href="about.html">Home</a>
-            <a href="games.html" class="currPG">Game Portfolio</a>
-            <a href="mailto:eperez57@montgomerycollege.edu">Email Me</a>
+            <a href="../index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <div class="dropdown">
+                <a href="portfolio.html" class="dropdown-btn currPG">Portfolio</a>
+                <div class="dropdown-content">
+                    <a href="programs.html">Programs</a>
+                    <a href="games.html" class="currPG">Games</a>
+                    <a href="more.html">More</a>
+                </div>
+            </div>
+            <a href="play-my-code.html">Play My Code</a>
+            <a href="mailto:lizziejperez@gmail.com">Email Me</a>
         </menu>
         <div class="content">
+            <h2 id="games">Games</h2>
+            <a href="https://lizziejperez.itch.io/" target="_blank" class="btn">My Itch.io</a>
+            <p>My most recent work can be found on Itch.io.</p>
             <div class="grid-1x2">
                 <a href="#2d" class="grid-link"><h3>2D Games</h3></a>
                 <a href="#3d" class="grid-link"><h3>3D Games</h3></a>
@@ -41,14 +44,14 @@
             <a href="https://lizziejperez.itch.io/tech190project1" target="_blank" class="btn">RPG Link</a>
             <h4>Highlights</h4>
             <div class="grid-1x3">
-                <img src="../../images/rpg-project.png" alt="rpg screenshot" width="90%" style="margin: auto;">
+                <img src="../images/rpg-project.png" alt="rpg screenshot" width="90%" style="margin: auto;">
                 <img src="" alt="rpg screenshot" width="90%" style="margin: auto;">
                 <img src="" alt="rpg screenshot" width="90%" style="margin: auto;">
             </div>
             <div class="grid-1x3">
-                <p>(working on it)</p>
-                <p>(working on it)</p>
-                <p>(working on it)</p>
+                <p>Explore this small village</p>
+                <p>Talk to the villagers</p>
+                <p>Earn rewards for helping villagers</p>
             </div>
             <h4>Video Playthrough</h4>
             <p>(working on it)</p>
@@ -62,7 +65,7 @@
             <a href="https://lizziejperez.itch.io/tech190project2" target="_blank" class="btn">2D Platformer Link</a>
             <h4>Highlights</h4>
             <div class="grid-1x3">
-                <img src="../../images/2d-project.png" alt="2d platformer screenshot" width="90%" style="margin: auto;">
+                <img src="../images/2d-project.png" alt="2d platformer screenshot" width="90%" style="margin: auto;">
                 <img src="" alt="2d platformer screenshot" width="90%" style="margin: auto;">
                 <img src="" alt="2d platformer screenshot" width="90%" style="margin: auto;">
             </div>
@@ -82,9 +85,13 @@
         </div>
         <footer>
             <a href="https://www.linkedin.com/in/elizabeth-perez-0b22b6109" target="_blank">LinkedIn</a>
+            <!-- <a href="https://twitter.com/nirdypanda" target="_blank">Twitter</a> -->
+            <!-- <a href="https://www.instagram.com/nirdypanda/?hl=en" target="_blank">Instagram</a> -->
+            <a href="https://www.youtube.com/channel/UC3eF1VaU20H_IWCSBttt6Qg" target="_blank">YouTube</a>
+            <a href="https://soundcloud.com/user-280111311" target="_blank">SoundCloud</a>
         </footer>
         <div class="sub-footer">
-            <h3><a href="mailto:eperez57@montgomerycollege.edu" class="h-link">eperez57@montgomerycollege.edu</a></h3>
+            <h3><a href="mailto:lizziejperez@gmail.com" class="h-link">lizziejperez@gmail.com</a></h3>
         </div>
     </body>
 </html>
