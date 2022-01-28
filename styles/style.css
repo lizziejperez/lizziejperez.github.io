@@ -120,4 +120,19 @@ td.cntr {text-align: center;}
 
 hr {border-color: rgba(153, 153, 153, 0.7);}
 hr.half {width: 60%; margin: 20px auto;}
-/* hr.quarter {width: 20%; margin: 20px auto;border-color: #f37e7eb0;} */
+hr.quarter {width: 20%; margin: 20px auto;border-color: #f37e7eb0;}
+
+.dropdown {position: relative; display: inline-block;}
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #f5f5f5;
+    width: fit-content;
+    z-index: 1;
+    border: 1px solid #999;
+    text-align: left;
+    padding: 2px;
+}
+.dropdown-content a {display: block;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-btn {color: #f37e7e;}
