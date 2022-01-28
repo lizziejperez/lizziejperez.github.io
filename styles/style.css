@@ -73,6 +73,13 @@ div.sub-footer {
 }
 .sub-footer h3 {margin: 0;padding: 10px;}
 
+div.grid-1x3 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: auto;
+}
 div.grid-2x2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
