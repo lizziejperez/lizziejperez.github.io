@@ -84,6 +84,8 @@ div.grid-2x2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    width: 90%;
+    margin: auto;
 }
 .grid-link {
     background-color: #333;
@@ -98,10 +100,10 @@ div.grid-2x2 {
 .grid-link:hover {color:#f37e7e;box-shadow: 4px 2px 2px #f37e7e;}
 .grid-link h3 {text-align: center;}
 
-div.grid-2x1 {
+div.grid-1x2 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 table.ah-table {
     padding: 5px;
