@@ -118,4 +118,6 @@ table.ah-table {
 }
 td.cntr {text-align: center;}
 
+hr {border-color: rgba(153, 153, 153, 0.7);}
 hr.half {width: 60%; margin: 20px auto;}
+/* hr.quarter {width: 20%; margin: 20px auto;border-color: #f37e7eb0;} */
