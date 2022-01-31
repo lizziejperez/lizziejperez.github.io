@@ -104,6 +104,8 @@ div.grid-1x2 {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: auto;
 }
 table.ah-table {
     padding: 5px;
