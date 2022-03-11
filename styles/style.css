@@ -48,6 +48,8 @@ footer a {
 }
 
 p {color: #555;}
+p a {text-decoration: underline;}
+
 ul {color: #555;}
 
 img {margin: 15px;}
