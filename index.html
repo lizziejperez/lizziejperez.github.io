@@ -10,35 +10,84 @@
         <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
     </head>
     <style>
-        .float-left {float: left;}
-        .center {display: block; margin-left: auto; margin-right: auto;}
+        /* Professional Skills Proficiency Color Coding */
+        .novice {color: #ffa45e;}
+        .intermediate {color: #ec4176;}
+        .proficient {color: #1b7979;}
+        .expert {color: #543884;}
     </style>
     <body>
-        <header>
-            <h1><a href="index.html" class="h-link">Lizzie J. Perez</a></h1>
-        </header>
-        <menu>
-            <a href="index.html" class="currPG">Home</a>
-            <a href="pages/resume.html">Resume</a>
-            <div class="dropdown">
-                <a href="pages/portfolio.html" class="dropdown-btn">Portfolio</a>
-                <div class="dropdown-content">
-                    <a href="pages/programs.html">Programs</a>
-                    <a href="pages/games.html">Games</a>
-                    <a href="pages/more.html">More</a>
-                </div>
-            </div>
-            <a href="pages/play-my-code.html">Play My Code</a>
-            <a href="mailto:lizziejperez@gmail.com">Email Me</a>
-        </menu>
         <div class="content">
             <h2>Welcome to my website!</h2>
-            <img class="center" src="images/figureOfLizzie.jpeg" alt="smiling cartoon self image">
+            <img src="images/figureOfLizzie.jpeg" alt="smiling cartoon self image">
             <p>Here you can find information about me, access my resume, view my portfolio, play my code, and contact me.</p>
             <hr>
 
-            <h2>A Little Info About Me</h2>
-            <img class="float-left" src="images/selfieLizzie.jpg" alt="" srcset="">
+            <h2>Explore</h2>
+            <p>Use the links below to open my other pages or scroll further down to learn about me.</p>
+            <div class="grid-1x3">
+                <a href="pages/resume.html" class="grid-link"><h3>Resume</h3></a>
+                <a href="pages/portfolio.html" class="grid-link"><h3>Portfolio</h3></a>
+                <a href="pages/play-my-code.html" class="grid-link"><h3>Play My Code</h3></a>
+                <h4>Check out the <a href="pages/resume.html">resume</a> page to find my academic history, experience, technical resume, and awards/certificates</h4>
+                <h4>Check out the <a href="pages/portfolio.html">portfolio</a> page to view some of my programs, games, art, music, and videos</h4>
+                <h4>Check out the <a href="pages/play-my-code.html">play my code</a> page to play some short Python games I coded</h4>
+            </div>
+            <hr>
+
+            <h2>About Me</h2>
+            <p>Discover who I am, my skills, my work experience, and my education path.</p>
+            <!-- <p>Expand or collapse the information by clicking on the box headers.</p> -->
+            <div class="box"><h3 class="coll-btn" style="text-align: center;">Who Am I?</h3>
+                <div class="coll-cont" style="display: block;"><hr class="quarter">
+                    <p>My name is Elizabeth Perez, but most call me Lizzie. I'm currently a full time student at the University of Maryland, and I'm pursuing a Bachelor's in Computer Science.</p>
+                    <img src="images/selfieLizzie.jpg" alt="self image" width="135">
+                    <p>I'm passsionate about programming and game development. I'm also interested in music production, video editing, and traveling.</p>
+                </div>
+            </div>
+            <div class="box"><h3 class="coll-btn" style="text-align: center;">Professional Skills</h3>
+                <div class="coll-cont"><hr class="quarter">
+                    <p>The text color of each one represents my current skill level. The represented skill levels include <span class="novice">novice</span>, <span class="intermediate">intermediate</span>, <span class="proficient">proficient</span>, and <span class="expert">expert</span>.</p>
+                    <div class="grid-1x2">
+                        <div><h4>Computer Programming</h4><p><span class="expert">Java</span> | <span class="proficient">C</span> | <span class="novice">Python</span></p></div>
+                        <div><h4>Game Development & Animation</h4><p><span class="intermediate">Unity</span> | <span class="novice">Adobe Animate</span> | <span class="novice">Maya</span></p></div>
+                        <div><h4>Website Development</h4><p><span class="expert">HTML</span> | <span class="expert">CSS</span> | <span class="proficient">WordPress</span></p></div>
+                        <div><h4>Video & Sound Editing</h4><p><span class="proficient">Adobo Premiere Pro</span> | <span class="proficient">Logic Pro X</span></p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="box text-left"><h3 class="coll-btn" style="text-align: center;">Work Experience</h3>
+                <div class="coll-cont"><hr class="quarter">
+                    <h4>WDCE Teaching Assistant</h4>
+                    <p>From July 2022 to August 2022, I'll be working for Montgomery Can Code as a teaching assistant for the summer coding camp. I will be assisting in teaching campers, grades 6-8, to code with Swift Playgrounds.</p>
+                    <h4>STEM Learning Assistant</h4>
+                    <p>From August 2021 to December 2021, I worked at Montgomery College as a STEM Learning Assistant for Computer Science 1. As a Learning Assistant, I completed pedagogy training, supported Computer Science 1 students in study/review sessions, and presented two chapters of class material.</p>
+                    <h4>NIST Intern</h4>
+                    <p>From January 2021 to August 2021, I interned at the National Institution of Standards and Technology under the guidance of my research advisor, Tyler Martin. During my internship, I developed an app interface for an autonomous measurement robot.</p>
+                    <h4>Student Library Assistant</h4>
+                    <p>From February 2019 to December 2019, I provided IT customer service to library patrons at Temple University's Ginsburg Health Sciences Library. This service included refilling printer paper, restocking toner, and updating software for loaner laptops.</p>
+                </div>
+            </div>
+            <div class="box text-left"><h3 class="coll-btn" style="text-align: center;">Education Path</h3>
+                <div class="coll-cont"><hr class="quarter">
+                    <h4>Temple University</h4>
+                    <p>I attended Temple University from Fall 2018 to Spring 2019. Here I studied Computer Science and gained work study experience at Temple University's Ginsburg Health Sciences Library.</p>
+                    <h4>Montgomery College 🎓</h4>
+                    <p>I transferred from Temple University to Montgomery College in 2020. I attended classes here from Summer 2020 to Spring 2022. While attending, I gained work experience as a NIST (National Institute of Standards and Technology) intern and a STEM learning assistant. I also joined the honors society Phi Theta Kappa.</p>
+                    <p>I graduated from Montgomery College in May 2022 with two degrees and a certificate:</p>
+                    <ul>
+                        <li>Computer Science and Technology, Computer Science Area of Concentration A.A.</li>
+                        <li>Computer Gaming and Simulation A.A.S.</li>
+                        <li>Computer Gaming and Simulation Certificate</li>
+                    </ul>
+                    <h4>University of Maryland</h4>
+                    <p>Now, I've transferred to the University of Maryland, specifically the College of Computer, Mathematical and Natural Sciences. I'll start attending courses at UMD in the Fall 2022 semester to persue a Bachelor of Science degree in Computer Science.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <h2>About Me</h2>
+            <img style="float: left;" src="images/selfieLizzie.jpg" alt="self image" srcset="">
             <div class="text-left">
                 <h3>Who am I?</h3>
                 <p>My name is Elizabeth Perez, but my friends call me Lizzie. I'm currently a full time student at the University of Maryland, and I'm pursuing a Bachelor's in Computer Science.</p>
@@ -50,7 +99,7 @@
                 <h4>Temple University</h4>
                 <p>After my gap year, I attended Temple University from Fall 2018 to Spring 2019. Here I studied Computer Science and gained work study experience at Temple University's Ginsburg Health Sciences Library.</p>
                 <h4>Montgomery College 🎓</h4>
-                <p>I transferred from Temple University to Montgomery College in 2020. I attended classes here from Summer 2020 to Spring 2022. I also gained work experience such as a NIST (National Institute of Standards and Technology) internship and a STEM Learning Assistant position.</p>
+                <p>I transferred from Temple University to Montgomery College in 2020. I attended classes here from Summer 2020 to Spring 2022. While attending, I gained work experience as a NIST (National Institute of Standards and Technology) intern and a STEM learning assistant. I also joined the honors society Phi Theta Kappa.</p>
                 <p>I graduated from Montgomery College in May 2022 with two degrees and a certificate:</p>
                 <ul>
                     <li>Computer Science and Technology, Computer Science Area of Concentration A.A.</li>
@@ -59,30 +108,10 @@
                 </ul>
                 <h4>University of Maryland</h4>
                 <p>Now, I've transferred to the University of Maryland, specifically the College of Computer, Mathematical and Natural Sciences. I'll start attending courses at UMD in the Fall 2022 semester to persue a Bachelor of Science degree in Computer Science.</p>
-            </div>
-            <hr>
-
-            <h2>Explore</h2>
-            <div class="grid-1x3">
-                <a href="pages/resume.html" class="grid-link"><h3>Resume</h3></a>
-                <a href="pages/portfolio.html" class="grid-link"><h3>Portfolio</h3></a>
-                <a href="pages/play-my-code.html" class="grid-link"><h3>Play My Code</h3></a>
-            </div>
-            <div class="grid-1x3">
-                <h4>Check out the <a href="pages/resume.html">resume</a> page to find my academic history, experience, technical resume, and awards/certificates</h4>
-                <h4>Check out the <a href="pages/portfolio.html">portfolio</a> page to view some of my programs, games, art, music, and videos</h4>
-                <h4>Check out the <a href="pages/play-my-code.html">play my code</a> page to play some short Python games I coded</h4>
-            </div>
-        </div>
-        <footer>
-            <a href="https://www.linkedin.com/in/elizabeth-perez-0b22b6109" target="_blank">LinkedIn</a>
-            <!-- <a href="https://twitter.com/nirdypanda" target="_blank">Twitter</a> -->
-            <!-- <a href="https://www.instagram.com/nirdypanda/?hl=en" target="_blank">Instagram</a> -->
-            <a href="https://www.youtube.com/channel/UC3eF1VaU20H_IWCSBttt6Qg" target="_blank">YouTube</a>
-            <a href="https://soundcloud.com/user-280111311" target="_blank">SoundCloud</a>
-        </footer>
-        <div class="sub-footer">
-            <h3><a href="mailto:lizziejperez@gmail.com" class="h-link">lizziejperez@gmail.com</a></h3>
-        </div>
+            </div> -->
     </body>
+    <script src="scripts/header.js"></script>
+    <script>addHeader(0);</script>
+    <script src="scripts/footer.js"></script>
+    <script src="scripts/boxCollapse.js"></script>
 </html>
