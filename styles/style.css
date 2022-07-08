@@ -30,10 +30,7 @@ menu a.currPG {color:#f37e7e; text-decoration: line-through;}
 .content {
     margin: 20px auto;
     width: 75%;
-    text-align: center;
 }
-.content h3 {text-align: left;}
-.text-left {text-align: left;}
 
 footer div.links {
     background-color: #f5f5f5;
@@ -59,8 +56,9 @@ p a {text-decoration: underline;}
 
 ul {color: #555;}
 
-img {display: block; margin-left: auto; margin-right: auto;}
+img {display: block; margin: auto;}
 img.cert {width: 50%;}
+img.pop {box-shadow: #555 2px 2px 2px; width: 95%; margin: auto;}
 
 a {text-decoration: none;color: #555;}
 a:hover {color: #f37e7e;}
@@ -124,6 +122,8 @@ hr {border-color: rgba(153, 153, 153, 0.7);}
 hr.half {width: 60%; margin: 20px auto;}
 hr.quarter {width: 30%; margin: 10px auto;}
 
+.text-left {text-align: left;}
+
 .dropdown {position: relative; display: inline-block;}
 .dropdown-content {
     display: none; 
@@ -150,8 +150,7 @@ hr.quarter {width: 30%; margin: 10px auto;}
     background-color: #f5f5f5;
 }
 /* Collapsable Button and Content */
-.box .coll-btn {border: none; background-color: #f5f5f5;}
-.box .coll-btn:hover {color: #f37e7e; cursor:pointer;}
+/* .box .coll-btn {border: none; background-color: #f5f5f5;} */
+.box .coll-btn:hover {cursor:pointer;}
 .box .coll-cont {display: none; overflow: hidden;}
-
-img.pop {box-shadow: #555 2px 2px 2px; width: 95%; margin: auto;}
+iframe {max-width: 100%;}
