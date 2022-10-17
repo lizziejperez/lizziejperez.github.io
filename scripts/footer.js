@@ -2,7 +2,7 @@
 var contactHTML = '<div class="contact"><h3><a href="mailto:lizziejperez@gmail.com" class="h-link">lizziejperez@gmail.com</a></h3></div>';
 var linksHTML = '<div class="links">';
 var links = [
-    ['https://www.linkedin.com/in/elizabeth-perez-0b22b6109', 'LinkedIn'],
+    ['https://www.linkedin.com/in/elizabeth-j-perez', 'LinkedIn'],
     ['https://github.com/lizziejperez/', 'GitHub'],
     ['https://lizziejperez.itch.io/', 'Itch.io'],
     // ['https://twitter.com/nirdypanda', 'Twitter'],
