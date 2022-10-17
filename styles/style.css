@@ -25,7 +25,7 @@ menu {
     margin: 0;
 }
 menu a {line-height: 30px;margin: 0 1%;}
-menu a.currPG {color:#f37e7e; text-decoration: line-through;}
+menu a.currPG {color:#f37e7e;}
 
 .content {
     margin: 20px auto;
