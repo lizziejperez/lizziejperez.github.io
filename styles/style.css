@@ -146,7 +146,7 @@ hr.quarter {width: 30%; margin: 10px auto;}
 .box .coll-btn:hover {cursor:pointer;}
 .box .coll-cont {display: none; overflow: hidden;}
 
-iframe {max-width: 100%;}
+iframe {max-width: 100%; border: none;}
 
 div.extra-info {
     margin: 5px auto;
