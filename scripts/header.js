@@ -6,7 +6,7 @@ function addHeader(currPG) {
         ['index.html', 'Home'],
         ['resume.html', 'Resume'],
         ['portfolio.html', 'Portfolio'],
-        ['play-my-code.html', 'Play My Code'],
+        // ['play-my-code.html', 'Play My Code'],
         ['mailto:lizziejperez@gmail.com', 'Email Me']
     ];
     var headerHTML = '<header><h1><a href="';
