@@ -11,28 +11,35 @@
     </head>
     <body>
         <div class="content">
-            <h2 id="top">Resume Overview</h2>
-            <p>Here you can scroll down to check out my <a href="#swe">software engineer resume</a> and my <a href="#gp">game developer resume</a>.</p>
-            <p>Alternatively, use the links below to take a look at my full resume by exploring my complete education, experience, and credentials.</p>
-            
-            <div class="grid-1x3">
+            <div class="grid-1x2">
+                <a href="#swe" class="grid-link"><h3>Software Engineer</h3></a>
+                <a href="#gd" class="grid-link"><h3>Game Developer</h3></a>
+            </div>
+            <!-- <hr class="quarter"> -->
+            <!-- <div class="grid-1x3">
                 <a href="education.html" class="grid-link"><h3>Academic History</h3></a>
                 <a href="experience.html" class="grid-link"><h3>Experience</h3></a>
                 <a href="credentials.html" class="grid-link"><h3>Degrees & Certificates</h3></a>
+            </div> -->
+            <!-- <hr> -->
+
+            <div id="swe" class="box">
+                <h2>Software Engineer Resume</h2>
+                <hr class="quarter">
+                <p>Click anywhere on my resume to open the PDF document.</p>
+                <a href="../extras/Web SWE Resume Elizabeth Perez.pdf" target="_blank"><img src="../images/SWE Resume Elizabeth Perez.PNG" alt="Software Engineer Resume" style="border-radius: 16px; border: 1px solid #f37e7e;"></a>
+                <br><a href="#top">^BACK TO TOP^</a>
             </div>
-            <hr>
 
-            <h2 id="swe" >Software Engineer Resume</h2>
-            <p>Click anywhere on my resume to open the PDF document!</p>
-            <a href="../extras/Web SWE Resume Elizabeth Perez.pdf" target="_blank"><img src="../images/SWE Resume Elizabeth Perez.PNG" alt="Software Engineer Resume"></a>
-            <br><a href="#top">^BACK TO TOP^</a>
-            <hr>
-
-            <h2 id="gp" >Game Developer Resume</h2>
-            <p>Click anywhere on my resume to open the PDF document!</p>
-            <a href="../extras/Web GD Resume Elizabeth Perez.pdf" target="_blank"><img src="../images/GD Resume Elizabeth Perez.PNG" alt="Game Developer Resume"></a>
-            <br><a href="#top">^BACK TO TOP^</a>
+            <div id="gd" class="box">
+                <h2>Game Developer Resume</h2>
+                <hr class="quarter">
+                <p>Click anywhere on my resume to open the PDF document.</p>
+                <a href="../extras/Web GD Resume Elizabeth Perez.pdf" target="_blank"><img src="../images/GD Resume Elizabeth Perez.PNG" alt="Game Developer Resume" style="border-radius: 16px; border: 1px solid #f37e7e;"></a>
+                <br><a href="#top">^BACK TO TOP^</a>
+            </div>
         </div>
+
         <script src="../scripts/header.js"></script>
         <script>addHeader(1);</script>
         <script src="../scripts/footer.js"></script>
