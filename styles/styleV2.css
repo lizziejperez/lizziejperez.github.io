@@ -115,6 +115,7 @@ a.btn:hover {background-color: #8b3b54; box-shadow: 2px 1px 1px #f37e7e;}
 a.h-link {color: #fbfeff;}
 a.h-link:hover {color: #8b3b54;}
 
+div.credits { font-size: small; }
 div.grid-1x2 {
     display: grid;
     grid-template-rows: 1fr;
