@@ -39,7 +39,7 @@ menu a:hover {
 
 .content {
     margin: 20px auto;
-    width: 75%;
+    width: 85%;
 }
 
 footer div.links {
@@ -82,6 +82,9 @@ img.icon {
     border-radius: 0;
     box-shadow: none;
     border: none;
+}
+img.resume {
+    max-width: 90%;
 }
 img.cert {width: 50%;}
 img.pop {
