@@ -149,6 +149,7 @@ div.grid-1x3 {
     font-weight: bold;
     /* color:#fbfeff; */
 }
+.grid-link:hover p { color:#fbfeff; }
 
 table.ah-table {
     padding: 5px;
