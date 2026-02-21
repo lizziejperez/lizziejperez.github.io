@@ -333,3 +333,49 @@ h2 {
   .two-col { grid-template-columns: 1fr; }
   .docs-section { padding: 1.4rem; }
 }
+
+/* ==================================================
+   Wizard Rescue Media Helpers
+   (Video + Image styling for game project pages)
+   ================================================== */
+
+/* Responsive video wrapper (YouTube / embed) */
+.video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 1rem;
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #171a1f;
+}
+
+/* Embedded iframe fills wrapper */
+.video-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Local MP4 video element */
+.video {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 14px;
+  border: 1px solid var(--border-soft);
+  background: #171a1f;
+}
+
+/* Highlight images inside mini-cards */
+.highlight-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border-soft);
+  margin-bottom: 0.85rem;
+  display: block;
+}
