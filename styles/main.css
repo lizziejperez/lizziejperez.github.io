@@ -1,0 +1,149 @@
+/* Color Theme */
+:root {
+  --bg-main: #1C1F24;
+  --bg-card: #24282E;
+  --border-soft: #32363C;
+
+  --text-main: #E6E6E6;
+  --text-muted: #B8BCC2;
+
+  --accent-primary: #8F8AEF;
+  --accent-secondary: #7A7E8A;
+  --accent-tertiary: #B67C9D;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* Section Title (H2) */
+h2 {
+  text-align: center;
+  margin: 0 0 2rem;
+  color: var(--accent-secondary);
+}
+
+/* Links (A) */
+a {
+  color: var(--accent-secondary);
+  text-decoration: none;
+}
+
+a:hover { color: var(--accent-tertiary); }
+
+/* Footer */
+footer {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  text-align: center;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-soft);
+}
+
+/* HERO Class */
+.hero {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 6rem 2rem 4rem;
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  color: var(--accent-primary);
+}
+
+.hero h3 {
+  margin: 0 0 1rem;
+  color: var(--accent-tertiary);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-text p {
+  margin: 0 0 1.5rem;
+  color: var(--text-muted);
+}
+
+.nickname {
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+/* HERO Class - Illustration */
+.hero-illustration {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(520px, 70vw);
+  opacity: 0.10;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-illustration img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* HERO Class - Buttons (overrides global link style) */
+.hero-links {
+  margin-top: 1.5rem;
+}
+
+.hero-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid var(--accent-primary);
+  border-radius: 8px;
+  color: var(--accent-primary);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.hero-links a:hover {
+  background-color: var(--accent-primary);
+  color: var(--bg-main);
+}
+
+/* FEATURED PROJECT GRID */
+#featured-projects {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* CARD */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 1.5rem;
+  max-width: 400px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 10px 30px rgba(143, 138, 239, 0.25);
+}
+.card h3 { color: var(--accent-primary); }
