@@ -1,4 +1,6 @@
-/* Color Theme */
+/* =========================
+   Color Theme
+   ========================= */
 :root {
   --bg-main: #1C1F24;
   --bg-card: #24282E;
@@ -23,22 +25,18 @@ body {
   line-height: 1.6;
 }
 
-/* Section Title (H2) */
-h2 {
-  text-align: center;
-  margin: 0 0 2rem;
-  color: var(--accent-secondary);
-}
-
-/* Links (A) */
+/* =========================
+   Global Links
+   ========================= */
 a {
   color: var(--accent-secondary);
   text-decoration: none;
 }
-
 a:hover { color: var(--accent-tertiary); }
 
-/* Footer */
+/* =========================
+   Footer
+   ========================= */
 footer {
   margin-top: 4rem;
   padding-top: 1rem;
@@ -47,7 +45,18 @@ footer {
   border-top: 1px solid var(--border-soft);
 }
 
-/* HERO Class */
+/* =========================
+   Homepage Section Title
+   ========================= */
+h2 {
+  text-align: center;
+  margin: 0 0 2rem;
+  color: var(--accent-secondary);
+}
+
+/* =========================
+   Hero Section
+   ========================= */
 .hero {
   position: relative;
   overflow: hidden;
@@ -85,7 +94,7 @@ footer {
   opacity: 0.7;
 }
 
-/* HERO Class - Illustration */
+/* Hero Illustration */
 .hero-illustration {
   position: absolute;
   left: 50%;
@@ -103,14 +112,16 @@ footer {
   display: block;
 }
 
-/* HERO Class - Buttons (overrides global link style) */
+/* Hero Buttons */
 .hero-links {
   margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .hero-links a {
-  display: inline-block;
-  margin-right: 1rem;
   padding: 0.6rem 1.2rem;
   border: 1px solid var(--accent-primary);
   border-radius: 8px;
@@ -123,7 +134,19 @@ footer {
   color: var(--bg-main);
 }
 
-/* Featured Project Grid */
+/* =========================
+   Shared Card / Panel Style
+   ========================= */
+.project,
+.docs-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+}
+
+/* =========================
+   Homepage Project Grid
+   ========================= */
 #featured-projects {
   display: flex;
   gap: 2rem;
@@ -131,11 +154,7 @@ footer {
   justify-content: center;
 }
 
-/* Featured Project Cards */
 .project {
-  background: var(--bg-card);
-  border: 1px solid var(--border-soft);
-  border-radius: 14px;
   padding: 1.5rem;
   max-width: 400px;
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
@@ -148,3 +167,169 @@ footer {
 }
 
 .project h3 { color: var(--accent-primary); }
+
+/* ==================================================
+   Docs Page Add-On Styles
+   (Only applied to documentation pages)
+   ================================================== */
+
+/* Docs Layout Column */
+.docs {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Reduced hero spacing for docs pages */
+.docs-hero {
+  padding: 4.5rem 2rem 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumbs {
+  margin: 0 0 1rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* Docs Section Panel */
+.docs-section {
+  padding: 2rem;
+  margin: 0 0 1.5rem;
+}
+
+/* Docs Section Titles */
+.docs-section h2 {
+  text-align: left;
+  margin: 0 0 1rem;
+  font-size: 1.35rem;
+  color: var(--accent-primary);
+  letter-spacing: 0.3px;
+}
+
+/* Paragraph spacing */
+.docs-section p { margin: 0 0 1rem; }
+.docs-section p:last-child { margin-bottom: 0; }
+
+/* Quick Facts Grid */
+.facts {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1.5rem;
+}
+
+.facts li {
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  padding: 0.85rem 0.95rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.facts strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* Callout Box */
+.callout {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  background: rgba(143, 138, 239, 0.06);
+  color: var(--text-muted);
+}
+
+/* Two-Column Layout */
+.two-col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Mini Cards */
+.mini-card {
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 1.1rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.mini-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--accent-primary);
+  font-size: 1.05rem;
+}
+
+.mini-card p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+/* Docs Lists */
+.docs-section ul,
+.docs-section ol {
+  margin: 0.75rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--text-muted);
+}
+
+.docs-section li { margin: 0.35rem 0; }
+
+/* Code Blocks */
+.code {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  border: 1px solid var(--border-soft);
+  background: #171a1f;
+  overflow-x: auto;
+}
+
+.code code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  white-space: pre;
+}
+
+/* Small Notes */
+.small-note {
+  margin-top: 0.75rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Docs Footer Navigation */
+.docs-footer {
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+.docs-footer a {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.docs-footer a:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+/* =========================
+   Responsive Adjustments
+   ========================= */
+@media (max-width: 820px) {
+  .docs { max-width: 700px; }
+  .facts { grid-template-columns: 1fr; }
+  .two-col { grid-template-columns: 1fr; }
+  .docs-section { padding: 1.4rem; }
+}
