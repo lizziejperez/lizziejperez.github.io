@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tiny-Lang Interpreter — project documentation by Elizabeth (Lizzie) J. Perez" />
+    <title>Tiny-Lang Interpreter | Elizabeth “Lizzie” J. Perez</title>
+
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+
+  <body>
+    <header class="hero docs-hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="breadcrumbs">
+            <a href="../index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>Tiny-Lang Interpreter</span>
+          </p>
+
+          <h1>Tiny-Lang Interpreter</h1>
+          <h3>Python Interpreter from Scratch</h3>
+          <p>
+            A tiny interpreter implementing lexing, parsing (AST), and evaluation.
+            Built to strengthen language fundamentals and clean architecture.
+          </p>
+
+          <nav class="hero-links" aria-label="Project links">
+            <a href="https://github.com/lizziejperez/Tiny-Lang-Interpreter" target="_blank" rel="noreferrer">View Code</a>
+          </nav>
+        </div>
+
+        <div class="hero-illustration">
+          <img src="../images/lizzie-coding-grey.png" alt="" aria-hidden="true" />
+        </div>
+      </div>
+    </header>
+
+    <main class="docs">
+      <!-- Quick facts -->
+      <section class="card docs-section">
+        <h2>Quick Facts</h2>
+        <ul class="facts">
+          <li><strong>Role:</strong> Solo project</li>
+          <li><strong>Timeline:</strong> Feb 2026 (ongoing)</li>
+          <li><strong>Focus:</strong> Lexer → Parser → Evaluator</li>
+          <li><strong>Tools:</strong> Python, src/ layout, Git</li>
+        </ul>
+      </section>
+
+      <!-- What it does -->
+      <section class="card docs-section">
+        <h2>What It Does</h2>
+        <p>
+          Tiny-Lang reads source code, converts it into tokens (lexer), builds an abstract syntax tree
+          (parser), then evaluates the AST to produce a result (interpreter).
+        </p>
+
+        <div class="callout">
+          <p><strong>Goal:</strong> Build a clean, modular interpreter that is easy to extend with new syntax.</p>
+        </div>
+      </section>
+
+      <!-- Architecture -->
+      <section class="card docs-section">
+        <h2>Architecture</h2>
+        <p>This project is organized as small modules that match each stage of interpretation:</p>
+
+        <div class="two-col">
+          <div class="mini-card">
+            <h3>Lexer</h3>
+            <p>Turns raw characters into tokens (identifiers, numbers, operators, keywords).</p>
+          </div>
+
+          <div class="mini-card">
+            <h3>Parser</h3>
+            <p>Consumes tokens and builds an AST using a clear, readable parsing strategy.</p>
+          </div>
+
+          <div class="mini-card">
+            <h3>AST</h3>
+            <p>Node structures representing expressions/statements, used by the evaluator.</p>
+          </div>
+
+          <div class="mini-card">
+            <h3>Evaluator</h3>
+            <p>Walks the AST and executes logic, producing values and handling errors.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="card docs-section">
+        <h2>Current Features</h2>
+        <ul>
+          <li>Clean Python project setup (src/ layout, installable package)</li>
+          <li>Lexer/tokenizer implemented for the initial core syntax</li>
+          <li>Token definitions + basic error handling for unknown characters</li>       
+        </ul>
+
+        <h3>In Progress</h3>
+        <ul>
+          <li>Parser (tokens → AST)</li>
+          <li>Grammar decisions + precedence rules</li>
+        </ul>
+
+        <h3>Planned</h3>
+        <ul>
+          <li>AST node types + recursive descent parsing</li>
+          <li>Evaluator / interpreter loop</li>
+          <li>Variables + assignment</li>
+          <li>Conditionals and blocks</li>
+          <li>Functions</li>
+          <li>REPL mode</li>
+          <li>Test suite</li>
+        </ul>
+      </section>
+
+      <!-- How to run -->
+      <section class="card docs-section">
+        <h2>How to Run</h2>
+        <ol>
+          <li>Clone the repository.</li>
+          <pre class="code"><code>git clone https://github.com/lizziejperez/Tiny-Lang-Interpreter.git
+cd Tiny-Lang-Interpreter</code></pre>
+
+          <li>Create/activate a virtual environment.</li>
+          <pre class="code"><code>python -m venv .venv
+
+# Windows PowerShell:
+.venv\Scripts\activate
+
+# macOS/Linux:
+source .venv/bin/activate</code></pre>
+
+          <li>Install (editable) and run a sample program.</li>
+          <pre class="code"><code>pip install -e .
+
+# Example run (update to your entrypoint):
+python -m tinylang</code></pre>
+        </ol>
+
+        <p class="small-note">
+          Note: Update the command above to match your current entrypoint once you finalize it.
+        </p>
+      </section>
+
+      <!-- Lessons learned -->
+      <section class="card docs-section">
+        <h2>Design Notes</h2>
+        <ul>
+          <li><strong>Modularity:</strong> each stage is independent and testable.</li>
+          <li><strong>Readability:</strong> simple parsing decisions over clever abstractions.</li>
+          <li><strong>Error handling:</strong> fail early with clear messages.</li>
+        </ul>
+      </section>
+
+      <!-- Next steps -->
+      <section class="card docs-section">
+      <h2>Next Steps</h2>
+      <ul>
+        <li><strong>Implement the Parser:</strong> Convert tokens into an AST using recursive descent parsing.</li>
+        <li><strong>Define Grammar Rules:</strong> Add support for variables and assignment expressions.</li>
+        <li><strong>Introduce an Environment Model:</strong> Build a symbol table for storing and resolving variable bindings.</li>
+        <li><strong>Add Automated Tests:</strong> Write unit tests for the lexer and upcoming parser components.</li>
+      </ul>
+    </section>
+
+      <section class="docs-footer">
+        <a href="../index.html">← Back to Home</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Elizabeth Perez</p>
+      <p>
+        <a href="https://github.com/lizziejperez/" target="_blank" rel="noreferrer">[ GitHub ]</a>
+        <a href="https://www.linkedin.com/in/elizabeth-j-perez" target="_blank" rel="noreferrer">[ LinkedIn ]</a>
+        <a href="mailto:lizziejperez@gmail.com">[ Email ]</a>
+      </p>
+    </footer>
+  </body>
+</html>
