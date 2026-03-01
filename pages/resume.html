@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Resume page - by Elizabeth (Lizzie) J. Perez"
+    />
+    <title>Resume | Elizabeth “Lizzie” J. Perez</title>
+
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+
+  <body>
+    <header class="hero docs-hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="breadcrumbs">
+            <a href="../index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>Resume</span>
+          </p>
+
+          <h1>Resume</h1>
+          <p>Building structured systems across web platforms and game engines.</p>     
+
+          <nav class="hero-links" aria-label="Project links">
+            <a href="#" class="is-active" role="tab" id="swe-tab">Software Engineer</a>
+            <a href="#" role="tab" id="gamedev-tab">Game Programmer</a>
+          </nav>
+        </div>
+
+        <div class="hero-illustration">
+          <img src="../images/lizzie-coding-grey.png" alt="" aria-hidden="true" />
+        </div>
+      </div>
+    </header>
+
+    <main class="docs">
+
+        <!-- Resume toggled info -->
+        <section id="resume-panel" class="card docs-section">
+            <h2 id="resumeTitle">Resume Title</h2>
+            <p id="resumeSummary">Resume Summary</p>
+            <div>
+                <a href="#" id="resumeLink" target="_blank" rel="noopener noreferrer">View full resume (PDF) →</a>
+            </div>
+
+            <h3>Highlights</h3>
+            <ul id="resumeHighlights"></ul>
+
+            <h3>Core Skills</h3>
+            <div id="resumeSkills"></div>
+        </section>
+
+        <section class="docs-footer">
+        <a href="../index.html">← Back to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Elizabeth Perez</p>
+        <p>
+        <a href="https://github.com/lizziejperez/" target="_blank">[ GitHub ]</a>
+        <a href="https://www.linkedin.com/in/elizabeth-j-perez" target="_blank">[ LinkedIn ]</a>
+        <a href="mailto:lizziejperez@gmail.com">[ Email ]</a>
+        </p>
+    </footer>
+
+    <script src="../scripts/resume-toggle.js"></script>
+  </body>
+</html>
