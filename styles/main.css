@@ -147,7 +147,7 @@ h2 {
 /* =========================
    Homepage Project Grid
    ========================= */
-#featured-projects {
+.projects {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
